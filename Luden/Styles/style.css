@@ -1,0 +1,260 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800);
+@font-face {
+    font-family : 'LineIcons';
+    src: url('../Assets/fonts/LineIcons.ttf') format('truetype');
+    src: url('../Assets/fonts/LineIcons.sbg') format('svg');
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.ms-5 {
+    margin-left: 4em !important;
+}
+
+:root {    
+    --cor-fundo:#191919;
+    --cor-fundo-sec:#222222;
+    --cor-fundo-ter:#2c2c2c;
+    --cor-preto:#282828;
+    --cor-primaria:#FF204E;
+    --cor-secundaria:#A0153E;
+    --cor-terciaria:#8a0c32;
+    --fonte-geral: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100% !important;
+    width: auto;
+}
+
+body {
+    background-color:var(--cor-fundo);
+    font-family: var(--fonte-geral);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;
+    font-weight: 500;
+    background-color: var(--cor-fundo-sec) !important;
+}
+
+.nav-link {
+    color: var(--cor-primaria) !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.aling-end {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-end {
+    text-align: end;
+}
+
+.modal-body {
+    background-color: var(--cor-fundo-sec);
+    border-radius: 15px;
+}
+
+.label {
+    color: var(--cor-primaria);
+
+}
+
+.sidebar {
+    background-color: var(--cor-fundo-ter);
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;
+}
+
+.input {
+    background-color: var(--cor-fundo-sec);
+    border-bottom: 1px solid var(--cor-primaria);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    border-radius: 2px;
+}
+
+.input:focus{
+    outline: none !important;
+    background-color: var(--cor-fundo);   
+}
+
+.link {
+    text-decoration: none;
+    color: var(--cor-primaria);
+}
+
+
+.btn-submit {
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo-sec);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 90px;
+}
+
+.pdd-10 {
+    padding: 10px;
+}
+
+.pdd-20 {
+    padding: 20px
+}
+
+.pdd-30 {
+    padding: 30px;
+}
+
+.pdd-r-10 {
+    padding-right: 10px;
+}
+
+.pdd-l-10 {
+    padding-left: 10px;
+}
+
+.pdd-l-20 {
+    padding-left: 20px;
+}
+
+.pdd-20 {
+    padding: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mg-10 {
+    margin: 10px;
+}
+
+.mg-t-10 {
+    margin-top: 10px
+}
+
+.mg-t-20 {
+    margin-top: 20px;
+}
+
+.mg-r-10 {
+    margin-right: 10px
+}
+
+.mg-l-10 {
+    margin-left: 10px
+}
+
+.mg-b-10 {
+    margin-bottom: 10px
+}
+
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+
+
+/*===================*/
+/* BOB
+/*===================*/
+
+@-webkit-keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes bob-on-hover-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.bob-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.bob-on-hover:hover, .bob-on-hover:focus, .bob-on-hover:active {
+  -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+  animation-name: bob-on-hover-float, bob-on-hover;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
