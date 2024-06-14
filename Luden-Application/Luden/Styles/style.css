@@ -16,6 +16,7 @@
 }
 
 :root {    
+    --cor-fundo-esc:#000000;
     --cor-fundo:#191919;
     --cor-fundo-sec:#222222;
     --cor-fundo-ter:#2c2c2c;
@@ -42,10 +43,18 @@ body {
     align-items: center;
 }
 
+.icone {
+    height: 25px;
+}
+
 .navbar {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;
     font-weight: 500;
     background-color: var(--cor-fundo-sec) !important;
+}
+
+.title {
+    font-size: 22px;
 }
 
 .nav-link {
@@ -100,6 +109,7 @@ body {
 }
 
 .sidebar {
+    height: 94vh !important;
     background-color: var(--cor-fundo-ter);
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;
@@ -201,7 +211,24 @@ body {
     margin-bottom: 20px;
 }
 
+.owl-nav {
+    display: none;
+}
 
+.owl-carousel {
+    border-radius: 20px;
+    background-color: var(--cor-fundo-esc);
+}
+
+.owl-stage-outer {
+    margin-bottom: 40px;
+    width: 160vh;
+}
+
+.carrosel {
+    padding: 15px 0px 15px 0px;
+    height: 190px;
+}
 /*===================*/
 /* BOB
 /*===================*/
