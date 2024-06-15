@@ -16,7 +16,7 @@
 }
 
 :root {    
-    --cor-fundo-esc:#000000;
+    --cor-fundo-esc:#141414;
     --cor-fundo:#191919;
     --cor-fundo-sec:#222222;
     --cor-fundo-ter:#2c2c2c;
@@ -188,7 +188,7 @@ body {
 }
 
 .mg-t-10 {
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 .mg-t-20 {
@@ -196,15 +196,19 @@ body {
 }
 
 .mg-r-10 {
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .mg-l-10 {
-    margin-left: 10px
+    margin-left: 10px;
+}
+
+.mg-l-20 {
+    margin-left: 20px;
 }
 
 .mg-b-10 {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .mg-b-20 {
@@ -227,7 +231,7 @@ body {
 
 .carrosel {
     padding: 15px 0px 15px 0px;
-    height: 190px;
+    height: 20vh;
 }
 /*===================*/
 /* BOB

@@ -7,15 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
-    <link rel="stylesheet" href="/Luden-Application/Luden/Styles/style.css">
-    <link rel="stylesheet" href="/Luden-Application/Luden/Styles/Cadastro.css">
+    <link rel="stylesheet" href="../../Styles/style.css">
+    <link rel="stylesheet" href="../../Styles/Cadastro.css">
     <title>Luden</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid ms-md-5 me-md-5">
-        <a class="navbar-brand ms-md-5 nav-link" href="/Luden-Application/Luden/Pages/Home.html"><img class="icone" src="/Luden-Application/Luden/Assets/Group.svg"> Luden</a>
+        <a class="navbar-brand mg-l-20 nav-link" href="/Luden-Application/Luden/Pages/Home.html"><img class="icone" src="/Luden-Application/Luden/Assets/Group.svg"> Luden</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,9 +41,16 @@
                     </div>
                 </div>
                 <div class="row flex justify-between align-center">
-                    <div class="col">
-                        <label for="" class="label">Nome</label>
-                        <input type="text" class="input" placeholder="Roberto...">
+                    <div class="col-6">
+                        <label for="name" class="label">Nome</label>
+                        <input type="text" id="name" class="input" placeholder="Roberto...">
+                    </div>
+                    <div class="col-6">
+                        <label for="visibility" class="label">Visibilidade</label>
+                        <select type="text" id="visibility" class="input" placeholder="Roberto...">
+                            <option value="0">Publico</option>
+                            <option value="1">Privado</option>
+                        </select>
                     </div>
                 </div>
                 <div class="row flex justify-between align-center mg-t-20">
