@@ -5,12 +5,14 @@ namespace App\Providers;
 use App\Models\Characters;
 use App\Models\Rpg;
 use App\Models\RpgPlayer;
+use App\Models\RpgSessions;
 use App\Models\RpgSystem;
 use App\Models\Skill;
 use App\Models\User;
 use App\Repositories\CharacterRepositoryEloquent;
 use App\Repositories\RpgPlayerRepositoryEloquent;
 use App\Repositories\RpgRepositoryEloquent;
+use App\Repositories\RpgSessionRepositoryEloquent;
 use App\Repositories\RpgSystemRepositoryEloquent;
 use App\Repositories\SkillRepositoryEloquent;
 use App\Repositories\UserRepositoryEloquent;
@@ -76,6 +78,14 @@ class AppServiceProvider extends ServiceProvider
             return new RpgPlayerRepositoryEloquent(new RpgPlayer());
         });
 
+        $this->app->bind(
+            'App\Interfaces\Repositories\IRpgSessionRepository',
+            'App\Repositories\RpgSessionRepositoryEloquent'
+        );
+
+        $this->app->bind('App\Interfaces\Repositories\IRpgSessionRepository', function (){
+            return new RpgSessionRepositoryEloquent(new RpgSessions());
+        });
     }
 
     /**
