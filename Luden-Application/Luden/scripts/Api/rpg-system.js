@@ -1,29 +1,151 @@
-function getRpgSystems(){
+const baseUrl = 'http://127.0.0.1:8000/api/v1/';
+
+export function getRpgSystems() {
     const token = localStorage.getItem('token');
-    if(!token){
+
+    if (!token) {
         window.location.href = 'login.html';
         return;
     }
 
-    fetch('http://127.0.0.1:8000/api/v1/rpgSystems', {
+    return fetch(baseUrl + 'rpgSystems', {
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer ' + token 
+            'Authorization': 'Bearer ' + token
         }
     })
     .then(response => {
         if (!response.ok) {
-            return response.text().then(text => { throw new Error(text) });
+            return response.text().then(text => { throw new Error(text); });
         }
         return response.json();
     })
     .then(data => {
-        console.log(data.data);
+        return data.data;
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Login failed: ' + error.message);
+        throw error;
     });
 }
 
-document.addEventListener('DOMContentLoaded', getRpgSystems());
+export function getRpgSystemById(id) {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        window.location.href = 'login.html';
+        return;
+    }
+
+    return fetch(baseUrl + 'rpgSystems/' + id, {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text); });
+        }
+        return response.json();
+    })
+    .then(data => {
+        return data.data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        throw error;
+    });
+}
+
+export function createRpgSystem(rpgSystem) {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        window.location.href = 'login.html';
+        return;
+    }
+
+    return fetch(baseUrl + 'rpgSystem', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify(rpgSystem)
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text); });
+        }
+        return response.json();
+    })
+    .then(resData => {
+        return resData.data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        throw error;
+    });
+}
+
+export function updateRpgSystem(rpgSystem, id) {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        window.location.href = 'login.html';
+        return;
+    }
+
+    return fetch(baseUrl + 'rpgSystems/' + id, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
+        },
+        body: JSON.stringify(rpgSystem)
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text); });
+        }
+        return response.json();
+    })
+    .then(resData => {
+        return resData.data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        throw error;
+    });
+}
+
+export function deleteRpgSystem(id) {
+    const token = localStorage.getItem('token');
+
+    if (!token) {
+        window.location.href = 'login.html';
+        return;
+    }
+
+    return fetch(baseUrl + 'rpgSystems/' + id, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
+        }
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.text().then(text => { throw new Error(text); });
+        }
+        return response.json();
+    })
+    .then(resData => {
+        return resData.data;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        throw error;
+    });
+}
