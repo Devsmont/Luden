@@ -13,7 +13,6 @@ use Laravel\Sanctum\PersonalAccessToken;
 class AuthController extends Controller
 {
     use HttpResponses;
-
     private UserService $userService;
 
     function __construct(UserService $userService)
