@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('skill_dice');
             $table->longText('description');
-            $table->string('image_url');
+            $table->longText('image_url');
             $table->timestamps();
         });
     }

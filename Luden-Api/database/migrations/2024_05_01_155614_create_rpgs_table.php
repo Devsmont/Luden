@@ -21,7 +21,7 @@ return new class extends Migration
                 ->references('id')
                 ->on('rpg_systems')
                 ->onDelete('cascade');
-            $table->string('image_url');
+            $table->longText('image_url');
             $table->dateTime('rpg_date');
             $table->foreign('master_id')
                 ->references('id')

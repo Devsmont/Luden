@@ -22,7 +22,7 @@ return new class extends Migration
             $table->boolean('visibility');
             $table->longText('description');
             $table->dateTime('birth_date');
-            $table->string('image_url');
+            $table->longText('image_url');
             $table->enum('status', ['normal','dead','unconscious','insane']);
             $table->timestamps();
         });
