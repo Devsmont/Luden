@@ -30,38 +30,35 @@
     </nav>
     <main class="flex align-center justify-center">
         <section class="pdd-20 form">
-            <h1>CADASTRAR DE SISTEMAS</h1>
-            <form action="">
-                <!-- <div class="row flex justify-between align-center relative mg-r-10">
-                    <div class="col-6">
-                        <label for="" class="label">Imagem url</label>
-                        <input type="text" class="input" placeholder="Digite a sua url da sua imagem">
-                    </div>
-                </div> -->
+            <h1>CADASTRO DE SISTEMAS</h1>
+            <form id="rpg-system-form" action="">
                 <div class="row flex justify-between align-center">
                     <div class="col">
-                        <label for="" class="label">Nome</label>
-                        <input type="text" class="input" placeholder="Roberto...">
+                        <label for="rpg-system-name" class="label">Nome</label>
+                        <input type="text" id="rpg-system-name" class="input" placeholder="Roberto...">
                     </div>
                 </div>
                 <div class="row flex justify-between align-center mg-t-20">
                     <div class="col">
-                        <label for="" class="label">Descrição</label>
-                        <input type="text" class="input" placeholder="Era um mago...">
+                        <label for="rpg-system-description" class="label">Descrição</label>
+                        <input type="text" id="rpg-system-description" class="input" placeholder="Era um mago...">
                     </div>
                 </div>
                 <div class="row flex justify-between align-center mg-t-20">
                     <div class="col-6">
-                        <label for="" class="label">Imagem url</label>
-                        <input type="text" class="input" placeholder="Digite a sua url da sua imagem">
+                        <label for="rpg-system-image" class="label">Imagem url</label>
+                        <input type="text" id="rpg-system-image" class="input" placeholder="Digite a sua url da sua imagem">
                     </div>
                     <div class="col-6">
                         <label for="" class="label">Tipo de dado</label>
-                        <select class="input">
-                            <option value="">D6</option>
-                            <option value="">Morto</option>
-                            <option value="">Inconsiente</option>
-                            <option value="">Louco</option>
+                        <select class="input" id="rpg-system-dice">
+                            <option value="4">D4</option>
+                            <option value="6">D6</option>
+                            <option value="8">D8</option>
+                            <option value="10">D10</option>
+                            <option value="12">D12</option>
+                            <option value="20">D20</option>
+                            <option value="100">D100</option>
                         </select>
                     </div>
                 </div>
@@ -77,3 +74,5 @@
 </body>
 
 </html>
+
+<script type="module" src="../../scripts/cadastro-sistemas.js"></script>

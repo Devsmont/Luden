@@ -66,7 +66,7 @@ export function createRpgSystem(rpgSystem) {
         return;
     }
 
-    return fetch(baseUrl + 'rpgSystem', {
+    return fetch(baseUrl + 'rpgSystems', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
