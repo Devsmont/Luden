@@ -29,31 +29,28 @@
     <main class="flex align-center justify-center">
         <section class="pdd-20 form">
             <h1>CADASTRAR RPG</h1>
-            <form action="">
+            <form action="" id="rpg-form">
                 <div class="row flex justify-between align-center">
                     <div class="col">
-                        <label for="" class="label">Nome</label>
-                        <input type="text" class="input" placeholder="Tormenta...">
+                        <label for="rpg-name" class="label">Nome</label>
+                        <input type="text" class="input" id="rpg-name" placeholder="Tormenta...">
                     </div>
                 </div>
                 <div class="row flex justify-between align-center mg-t-20">
                     <div class="col">
-                        <label for="" class="label">Descrição</label>
-                        <input type="text" class="input" placeholder="Sistema de...">
+                        <label for="rpg-description" class="label">Descrição</label>
+                        <input type="text" id="rpg-description" class="input" placeholder="Sistema de...">
                     </div>
                 </div>
                 <div class="row flex justify-between align-center mg-t-20">
                     <div class="col-6">
-                        <label for="" class="label">Imagem url</label>
-                        <input type="text" class="input" placeholder="Digite a sua url da sua imagem">
+                        <label for="rpg-image" class="label">Imagem url</label>
+                        <input type="text" class="input" id="rpg-image" placeholder="Digite a sua url da sua imagem">
                     </div>
                     <div class="col-6">
-                        <label for="" class="label">Sistema</label>
-                        <select class="input">
-                            <option value="">Luden</option>
-                            <option value="">Morto</option>
-                            <option value="">Inconsiente</option>
-                            <option value="">Louco</option>
+                        <label for="rpg-rpg-system" class="label">Sistema</label>
+                        <select class="input" id="rpg-rpg-system">
+                            <!-- Carrega do back-end -->
                         </select>
                     </div>
                 </div>
@@ -68,4 +65,5 @@
         </section>
     </main>
 </body>
+<script type="module" src="../../scripts/cadastro-rpgs.js"></script>
 </html>
