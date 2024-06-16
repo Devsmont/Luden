@@ -24,7 +24,7 @@ class CharactersFactory extends Factory
             'description' => fake()->text(),
             'birth_date' => fake()->dateTime(),
             'image_url' => fake()->imageUrl(),
-            'status' => fake()->randomElement(['normal','dead','unconscious','insane'])
+            'status' => fake()->randomElement(['normal','morto','inconsciente','louco'])
         ];
     }
 }

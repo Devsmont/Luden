@@ -191,6 +191,10 @@ body {
     margin-top: 10px;
 }
 
+.section-form {
+    margin-top: 120px;
+}
+
 .mg-t-20 {
     margin-top: 20px;
 }
@@ -236,6 +240,17 @@ body {
 /*===================*/
 /* BOB
 /*===================*/
+.btn-add-skill{
+    color: var(--cor-fundo-sec);
+    background: var(--cor-primaria);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
 
 @-webkit-keyframes bob-on-hover {
   0% {

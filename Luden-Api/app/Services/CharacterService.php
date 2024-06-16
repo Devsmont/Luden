@@ -38,7 +38,7 @@ class CharacterService
             'description' => 'required|string',
             'birth_date' => 'required|date',
             'image_url' => 'required|url',
-            'status' => 'required|in:normal,dead,unconscious,insane',
+            'status' => 'required|in:normal,morto,inconsciente,louco    ',
             'skills' => 'array',
             'skills.*.id' => 'exists:skills,id|required',
             'skills.*.value' => 'required'

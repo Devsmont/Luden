@@ -23,7 +23,7 @@ return new class extends Migration
             $table->longText('description');
             $table->dateTime('birth_date');
             $table->longText('image_url');
-            $table->enum('status', ['normal','dead','unconscious','insane']);
+            $table->enum('status', ['normal','morto','inconsciente','louco']);
             $table->timestamps();
         });
     }
