@@ -109,7 +109,6 @@ body {
 }
 
 .sidebar {
-    height: 94vh !important;
     background-color: var(--cor-fundo-ter);
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;

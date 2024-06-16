@@ -21,13 +21,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(15)->create();
-        Characters::factory(15)->create();
-        RpgSystem::factory(15)->create();
-        Rpg::factory(15)->create();
-        Skill::factory(15)->create();
-        CharacterSkill::factory(15)->create();
-        RpgPlayer::factory(15)->create();
-        RpgSessions::factory(15)->create();
+        User::factory(5)->create();
+        Characters::factory(5)->create();
+        RpgSystem::factory(5)->create();
+        Rpg::factory(5)->create();
+        Skill::factory(5)->create();
+        CharacterSkill::factory(5)->create();
+        RpgPlayer::factory(5)->create();
+        RpgSessions::factory(5)->create();
     }
 }

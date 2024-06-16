@@ -30,7 +30,7 @@ class RpgService
             'rpg_system_id' => 'required|exists:rpg_systems,id',
             'name' => 'required|string',
             'description' => 'required|string',
-            'image_url' => 'required|url',
+            'image_url' => 'required|string',
         ]);
 
         if ($validator->fails()) {
@@ -60,7 +60,7 @@ class RpgService
             'master_id' => 'required|exists:users,id',
             'name' => 'required|string',
             'description' => 'required|string',
-            'image_url' => 'required|url',
+            'image_url' => 'required|string',
             'rpg_date' => 'required|date'
         ]);
 
