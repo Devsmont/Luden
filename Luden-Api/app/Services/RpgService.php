@@ -31,7 +31,6 @@ class RpgService
             'name' => 'required|string',
             'description' => 'required|string',
             'image_url' => 'required|url',
-            'rpg_date' => 'required|date'
         ]);
 
         if ($validator->fails()) {

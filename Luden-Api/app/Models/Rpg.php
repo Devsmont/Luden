@@ -17,7 +17,6 @@ class Rpg extends Model
         'name',
         'description',
         'image_url',
-        'rpg_date'
     ];
 
     public function master(): BelongsTo

@@ -20,7 +20,6 @@ class RpgResource extends JsonResource
             'name' => $this->name,
             'description' => $this->description,
             'image_url' => $this->image_url,
-            'rpg_date' => Carbon::parse($this->rpg_date)->format('m/d/Y H:i:s'),
             'rpg_system' => [
                 'id' => $this->rpgSystem->id,
                 'name' => $this->rpgSystem->name

@@ -23,8 +23,7 @@ class RpgFactory extends Factory
             'master_id' => User::all()->random()->id,
             'name' => fake()->unique()->word(),
             'description' => fake()->paragraph(),
-            'image_url' => fake()->imageUrl(),
-            'rpg_date' => fake()->dateTime(),
+            'image_url' => fake()->imageUrl()
         ];
 
     }
