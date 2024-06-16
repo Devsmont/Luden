@@ -28,7 +28,6 @@ class RpgService
     {
         $validator = Validator::make($data, [
             'rpg_system_id' => 'required|exists:rpg_systems,id',
-            'master_id' => 'required|exists:users,id',
             'name' => 'required|string',
             'description' => 'required|string',
             'image_url' => 'required|url',

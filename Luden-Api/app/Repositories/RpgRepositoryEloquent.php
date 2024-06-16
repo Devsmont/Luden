@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Interfaces\Repositories\IRpgRepository;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 
 class RpgRepositoryEloquent implements IRpgRepository
 {
@@ -21,7 +22,8 @@ class RpgRepositoryEloquent implements IRpgRepository
 
     public function store(array $data)
     {
-        return $this->rpg->create($data);
+        $rpg = ['master_id' => Auth::id(), ...$data];
+        return $this->rpg->create($rpg);
     }
 
     public function getList()
