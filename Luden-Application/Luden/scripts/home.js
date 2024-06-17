@@ -26,35 +26,48 @@ async function loadCarouselData() {
 function loadCarouselRpgData(rpgs) {
     const carouselRpgs = document.getElementById('carousel-rpgs');
     rpgs.forEach(rpg => {
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = rpg.image_url;
-        img.className = 'carrosel';
-        div.appendChild(img);
-        carouselRpgs.appendChild(div);
+        const card = document.createElement('div');
+        card.innerHTML = ` <div class="card">
+                                <img src="${rpg.image_url}" class="card-image-top carrosel">
+                                <div class="card-body">
+                                <h5 class="card-title">${rpg.name}</h5>
+                                <button class="btn-card" style="width: 100%;">Editar</button>
+                                <button class="btn-card" style="width: 100%;">Deletar</button>
+                                </div>
+                            </div>`
+        carouselRpgs.appendChild(card);
     });
 }
 
 function loadCarouselRpgSystemData(rpgSystems) {
     const carouselRpgSystems = document.getElementById('carousel-rpg-system');
     rpgSystems.forEach(rpgSystem => {
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = rpgSystem.image_url;
-        img.className = 'carrosel';
-        div.appendChild(img);
-        carouselRpgSystems.appendChild(div);
+        const card = document.createElement('div');
+        card.innerHTML = ` <div class="card">
+                               <img src="${rpgSystem.image_url}" class="card-image-top carrosel">
+                                <div class="card-body">
+                                <h5 class="card-title">${rpgSystem.name}</h5>
+                                <button class="btn-card" style="width: 100%;">Editar</button>
+                                <button class="btn-card" style="width: 100%;">Deletar</button>
+                                </div>
+                            </div>`
+        carouselRpgSystems.appendChild(card);
     });
 }
 
 function loadCarouselCharacterData(characters) {
     const carouselCharacters = document.getElementById('carousel-characters');
     characters.forEach(character => {
-        const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = character.image_url;
-        img.className = 'carrosel';
-        div.appendChild(img);
-        carouselCharacters.appendChild(div);
+        const card = document.createElement('div');
+        card.innerHTML = ` <div class="card">
+                                <img src="${character.image_url}" class="card-image-top carrosel">
+                                <div class="card-body">
+                                <h5 class="card-title">${character.name}</h5>
+                                <button class="btn-card" style="width: 100%;">Editar</button>
+                                <button class="btn-card" style="width: 100%;">Deletar</button>
+                                </div>
+                            </div>`
+        carouselCharacters.appendChild(card);
     });
 }
+
