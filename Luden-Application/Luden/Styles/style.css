@@ -48,20 +48,22 @@ body#home{
 }
 
 .icone {
-    height: 25px;
+    height: 2.6vh;
 }
 
 .navbar {
+    height: 6vh;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 15px;
     font-weight: 500;
     background-color: var(--cor-fundo-sec) !important;
 }
 
 .title {
-    font-size: 22px;
+    font-size: 2.3vh;
 }
 
 .nav-link {
+    font-size: 2.1vh;
     color: var(--cor-primaria) !important;
 }
 
@@ -74,12 +76,20 @@ body#home{
     display: flex;
 }
 
+.align-start {
+    align-items: start;
+}
+
 .align-center {
     align-items: center;
 }
 
-.aling-end {
+.align-end {
     align-items:end
+}
+
+.justify-start {
+    justify-content: start;
 }
 
 .justify-center {
@@ -109,7 +119,7 @@ body#home{
 
 .label {
     color: var(--cor-primaria);
-    padding: 10px 0;
+    padding: 1vh 0;
 }
 
 .sidebar {
@@ -140,6 +150,7 @@ body#home{
 }
 
 .link {
+    font-size: 1.7vh;
     text-decoration: none;
     color: var(--cor-primaria);
 }
@@ -150,8 +161,8 @@ body#home{
     color: var(--cor-fundo-sec);
     border: none;
     border-radius: 10px;
-    height: 40px;
-    width: 90px;
+    height: 4.2vh;
+    width: 9.6vh;
 }
 
 .btn-card {
@@ -164,31 +175,31 @@ body#home{
 }
 
 .pdd-10 {
-    padding: 10px;
+    padding: 1vh;
 }
 
 .pdd-20 {
-    padding: 20px
+    padding: 2vh;
 }
 
 .pdd-30 {
-    padding: 30px;
+    padding: 3.2vh;
 }
 
 .pdd-r-10 {
-    padding-right: 10px;
+    padding-right: 1vh;
 }
 
 .pdd-l-10 {
-    padding-left: 10px;
+    padding-left: 1vh;
 }
 
 .pdd-l-20 {
-    padding-left: 20px;
+    padding-left: 2vh;
 }
 
 .pdd-20 {
-    padding: 20px;
+    padding: 2vh;
 }
 
 .bold {
@@ -196,39 +207,39 @@ body#home{
 }
 
 .mg-10 {
-    margin: 10px;
+    margin: 1vh;
 }
 
 .mg-t-10 {
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 .section-form {
-    margin-top: 120px;
+    margin-top: 12.8vh;
 }
 
 .mg-t-20 {
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
 .mg-r-10 {
-    margin-right: 10px;
+    margin-right: 1vh;
 }
 
 .mg-l-10 {
-    margin-left: 10px;
+    margin-left: 1vh;
 }
 
 .mg-l-20 {
-    margin-left: 20px;
+    margin-left: 2vh;
 }
 
 .mg-b-10 {
-    margin-bottom: 10px;
+    margin-bottom: 1vh;
 }
 
 .mg-b-20 {
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 .owl-nav {
@@ -239,18 +250,19 @@ body#home{
     color: var(--cor-fundo-image);
 }
 .owl-carousel {
-    border-radius: 20px;
+    border-radius: 2vh;
     background-color: var(--cor-fundo-esc);
 }
 
 .owl-stage-outer {
-    margin-bottom: 40px;
+    margin-bottom: 4.2vh;
     width: 160vh;
 }
 
 .carrosel {
-    padding: 15px 0px 15px 0px;
+    padding: 1.6vh 0px 1.6vh 0px;
     height: 20vh;
+    width: 20vh;
 }
 /*===================*/
 /* BOB

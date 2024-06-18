@@ -14,7 +14,7 @@ h1{
 /* Estilo básico para o container do rádio */
 .radio-group {
     display: flex;
-    padding: 0 20px;
+    padding: 0 2vh;
     justify-content: space-between;
 }
 
@@ -23,11 +23,11 @@ h1{
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-bottom: 8px; /* Espaço entre os itens */
+    margin-bottom: 0.8vh; /* Espaço entre os itens */
     cursor: pointer;
-    font-size: 16px; /* Tamanho da fonte */
+    font-size: 1.7vh; /* Tamanho da fonte */
     user-select: none;
-    gap: 5px;
+    gap: 0.5vh;
 }
 
 /* Esconde o input radio */
@@ -39,8 +39,8 @@ h1{
 
 /* Estilo do checkmark que será mostrado no lugar do input radio */
 .checkmark {
-    height: 15px; /* Tamanho do checkmark */
-    width: 15px; /* Tamanho do checkmark */
+    height: 1.6vh; /* Tamanho do checkmark */
+    width: 1.6vh; /* Tamanho do checkmark */
     background-color: #eee;
     border-radius: 50%;
     display: inline-block;
@@ -49,7 +49,7 @@ h1{
 
 /* Espaçamento entre checkmark e texto */
 .text {
-    margin-left: 8px; /* Espaçamento entre o checkmark e o texto */
+    margin-left: 0.8vh; /* Espaçamento entre o checkmark e o texto */
 }
 
 /* Estilo para o checkmark quando o input radio é selecionado */
@@ -70,10 +70,10 @@ h1{
 
 /* Estilo do efeito dentro do checkmark */
 .checkmark:after {
-    top: 4px; /* Posicionamento do círculo interno */
-    left: 4px; /* Posicionamento do círculo interno */
-    width: 7px; /* Tamanho do círculo interno */
-    height: 7px; /* Tamanho do círculo interno */
+    top: 0.4vh; /* Posicionamento do círculo interno */
+    left: 0.4vh; /* Posicionamento do círculo interno */
+    width: 0.7vh; /* Tamanho do círculo interno */
+    height: 0.7vh; /* Tamanho do círculo interno */
     border-radius: 50%;
     background: white;
 }
@@ -81,48 +81,48 @@ h1{
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .radio-container {
-        font-size: 14px; /* Tamanho da fonte menor */
+        font-size: 1.4vh; /* Tamanho da fonte menor */
     }
 
     .checkmark {
-        height: 12px; /* Tamanho menor do checkmark */
-        width: 12px; /* Tamanho menor do checkmark */
+        height: 1.2vh; /* Tamanho menor do checkmark */
+        width: 1.2vh; /* Tamanho menor do checkmark */
     }
 
     .checkmark:after {
-        top: 3px; /* Ajuste de posicionamento do círculo interno */
-        left: 3px; /* Ajuste de posicionamento do círculo interno */
-        width: 6px; /* Tamanho menor do círculo interno */
-        height: 6px; /* Tamanho menor do círculo interno */
+        top: 0.3vh; /* Ajuste de posicionamento do círculo interno */
+        left: 0.3vh; /* Ajuste de posicionamento do círculo interno */
+        width: 0.6vh; /* Tamanho menor do círculo interno */
+        height: 0.6vh; /* Tamanho menor do círculo interno */
     }
 }
 
 @media (max-width: 480px) {
     .radio-container {
-        font-size: 12px; /* Tamanho da fonte ainda menor */
+        font-size: 1.2vh; /* Tamanho da fonte ainda menor */
     }
 
     .checkmark {
-        height: 10px; /* Tamanho ainda menor do checkmark */
-        width: 10px; /* Tamanho ainda menor do checkmark */
+        height: 1vh; /* Tamanho ainda menor do checkmark */
+        width: 1vh; /* Tamanho ainda menor do checkmark */
     }
 
     .checkmark:after {
-        top: 2px; /* Ajuste de posicionamento do círculo interno */
-        left: 2px; /* Ajuste de posicionamento do círculo interno */
-        width: 4px; /* Tamanho menor do círculo interno */
-        height: 4px; /* Tamanho menor do círculo interno */
+        top: 0.2vh; /* Ajuste de posicionamento do círculo interno */
+        left: 0.2vh; /* Ajuste de posicionamento do círculo interno */
+        width: 0.4vh; /* Tamanho menor do círculo interno */
+        height: 0.4vh; /* Tamanho menor do círculo interno */
     }
 }
 
     #imagem-personagem{
         position:relative;
-        top: -40px;
+        top: -4vh;
     }
 
     .exemplo-imagem{
-        width: 153px;
-        height: 146px;
+        width: 15.3vh;
+        height: 14.6vh;
         background-color: var(--cor-fundo-image);
-        border-radius: 10px;
+        border-radius: 1vh;
     }
