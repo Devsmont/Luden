@@ -70,7 +70,7 @@ class CharacterService
             'visibility' => 'required|boolean',
             'description' => 'required|string',
             'birth_date' => 'required|date',
-            'image_url' => 'required|url',
+            'image_url' => 'required',
             'status' => 'required|in:normal,dead,unconscious,insane',
             'skills' => 'array',
             'skills.*.id' => 'exists:skills,id|required',

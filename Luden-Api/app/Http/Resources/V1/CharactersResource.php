@@ -17,7 +17,7 @@ class CharactersResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'visibility' => $this->visibility ? 'public' : 'private',
+            'visibility' => $this->visibility,
             'description' => $this->description,
             'birth_date' => Carbon::parse($this->birth_date)->format('m/d/Y H:i:s'),
             'image_url' => $this->image_url,
